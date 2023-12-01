@@ -15,12 +15,14 @@ public class Goal : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" && itemCollection.GetCoins() == maxCoins.getMaxCoins())
+        if (other.gameObject.tag == "Player" && itemCollection.GetCoins() == maxCoins.getMaxCoins())
         {
+            Debug.Log("Player Collision");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         } 
         else if (itemCollection.GetCoins() < maxCoins.getMaxCoins())
         {
+            Debug.Log("Player Collision");
             if ((maxCoins.getMaxCoins() - itemCollection.GetCoins()) < 2)
                 popupWIndow.AddToQueue("You have not found " + (maxCoins.getMaxCoins() - itemCollection.GetCoins() + "coin"));
             else
