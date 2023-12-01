@@ -31244,7 +31244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 315956284}
-  remainingTime: 15
+  remainingTime: 300
 --- !u!43 &1333927619
 Mesh:
   m_ObjectHideFlags: 0
