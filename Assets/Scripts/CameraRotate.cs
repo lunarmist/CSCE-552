@@ -10,6 +10,7 @@ public class CameraRotate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Screen.SetResolution(1081, 720, false);
         Cursor.lockState = CursorLockMode.Locked;        
     }
 

@@ -17,6 +17,6 @@ public class MainMenu : MonoBehaviour
 
     public void retry()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
