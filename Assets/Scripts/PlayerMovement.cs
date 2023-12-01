@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && jumps > 0)
         {
-            rb.velocity = new Vector3(rb.velocity.x, 20, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, 6, rb.velocity.z);
             jumps--;
         }
 

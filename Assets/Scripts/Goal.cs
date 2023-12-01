@@ -24,9 +24,9 @@ public class Goal : MonoBehaviour
         {
             Debug.Log("Player Collision");
             if ((maxCoins.getMaxCoins() - itemCollection.GetCoins()) < 2)
-                popupWIndow.AddToQueue("You have not found " + (maxCoins.getMaxCoins() - itemCollection.GetCoins() + "coin"));
+                popupWIndow.AddToQueue("You have not found " + (maxCoins.getMaxCoins() - itemCollection.GetCoins() + " coin"));
             else
-                popupWIndow.AddToQueue("You have not found " + (maxCoins.getMaxCoins() - itemCollection.GetCoins() + "coins"));
+                popupWIndow.AddToQueue("You have not found " + (maxCoins.getMaxCoins() - itemCollection.GetCoins() + " coins"));
         }
     }
 }
