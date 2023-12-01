@@ -14,7 +14,7 @@ public class WaypointMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Vector3.Distance(transform.position, waypoints[currentWaypointIndex].transform.position) < .1f)
         {
