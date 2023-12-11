@@ -53,8 +53,11 @@ public class PlayerMovement : MonoBehaviour
             jumps--;
         }
 
-            
-            
+
+        //Vector3 offest = new Vector3(3, 3, 3);//Distance from object
+        //Vector3 cameraPos = Camera.main.transform.position;//position of camera
+        //Camera.main.transform.position = Vector3.Lerp(new Vector3(cameraPos.x, cameraPos.y, cameraPos.z), transform.position + offest, 1.0f * Time.deltaTime);
+
     }
 
     public void OnCollisionEnter(Collision collision)

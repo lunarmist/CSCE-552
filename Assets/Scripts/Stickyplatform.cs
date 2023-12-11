@@ -8,9 +8,12 @@ public class Stickyplatform : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        var camera = transform.Find("Player/MainCamera");
        if (collision.gameObject.name == "Player")
         {
             collision.gameObject.transform.SetParent(transform);
+            collision.transform.localScale = new Vector3(0.3f, 0.3f, 0.6f);
+            camera.transform.localScale = new Vector3(1.0f, 1.866855f, 0.5356603f);
         }
     }
 
