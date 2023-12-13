@@ -11,12 +11,29 @@ public class Countdown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (SceneManager.GetActiveScene().name == "TutorialLevel")
+        {
+            remainingTime = 300;
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level_1")
+        {
+            remainingTime = 180;
+
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level_2")
+        {
+            remainingTime = 240;
+
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
