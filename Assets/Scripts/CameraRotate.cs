@@ -14,15 +14,7 @@ public class CameraRotate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.FindWithTag("Player").transform;
-        Debug.Log("Say some sht");
-        Debug.Log("Say some sht2");
-        Debug.Log("Seomthing2: "+ player.transform.rotation.x);
-        //Screen.SetResolution(1081, 720, false);
-        Debug.Log("Say some sht3");
         Cursor.lockState = CursorLockMode.Locked;
-        Debug.Log("Say some sht4");
-
     }
 
     // Update is called once per frame
