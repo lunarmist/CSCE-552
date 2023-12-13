@@ -58,7 +58,7 @@ public class Countdown : MonoBehaviour
     void gameOver()
     {
         Cursor.lockState = CursorLockMode.None;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("Game_Over");
     }
 
 }

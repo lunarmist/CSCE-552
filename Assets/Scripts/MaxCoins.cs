@@ -16,7 +16,7 @@ public class MaxCoins : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level_1")
         {
-            Max_Coins = 4;
+            Max_Coins = 3;
             
         }
 
